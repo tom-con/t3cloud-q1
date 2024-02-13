@@ -16,6 +16,3 @@ var namesOfAttendees = ["Sangay", "Nayan", "Pema", "Sherab", "Passang", "Sonam",
 // 	var studentName = namesOfAttendees[i];
 // 	console.log(studentName + " is in class today.")
 // }
-
-
-
