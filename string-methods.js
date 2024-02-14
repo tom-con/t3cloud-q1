@@ -17,19 +17,35 @@
 // console.log(checkUsername("mike45")) // true
 // console.log(checkUsername("apple45")) // false
 
-var result = "tom james jones"
+// var result = "tom james jones"
 
 // var capitalized = result.replace(/(^|\s)[a-z]/g, (x) => x.toLocaleUpperCase())
 // console.log(capitalized)
 
-var splitIntoWords = result.split(" ")
+// var splitIntoWords = result.split(" ")
 
-for (var i = 0; i < splitIntoWords.length; i += 1) {
-	var currentWord = splitIntoWords[i]
-	var lettersOfCurrentWord = currentWord.split("")
-	lettersOfCurrentWord[0] = lettersOfCurrentWord[0].toLocaleUpperCase()
-	splitIntoWords[i] = lettersOfCurrentWord.join("")
+// for (var i = 0; i < splitIntoWords.length; i += 1) {
+// 	var currentWord = splitIntoWords[i]
+// 	var lettersOfCurrentWord = currentWord.split("")
+// 	lettersOfCurrentWord[0] = lettersOfCurrentWord[0].toLocaleUpperCase()
+// 	splitIntoWords[i] = lettersOfCurrentWord.join("")
+// }
+// const capitalizedName = splitIntoWords.join(" ")
+// console.log(capitalizedName)
+
+function findLargestWord(sentence) {
+	var words = sentence.split(" ")
+	var largestWord = ""
+
+	for (var i = 0; i < words.length; i += 1) {
+		if (words[i].length > largestWord.length) {
+			largestWord = words[i]
+		}
+	}
+
+	return largestWord
 }
-const capitalizedName = splitIntoWords.join(" ")
-console.log(capitalizedName)
+
+console.log(findLargestWord("Hello how are you today"))
+console.log(findLargestWord("It's really cold here today totals"))
 
