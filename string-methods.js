@@ -17,19 +17,19 @@
 // console.log(checkUsername("mike45")) // true
 // console.log(checkUsername("apple45")) // false
 
-var result = "john james jones"
+var result = "tom james jones"
+
+// var capitalized = result.replace(/(^|\s)[a-z]/g, (x) => x.toLocaleUpperCase())
+// console.log(capitalized)
 
 var splitIntoWords = result.split(" ")
 
 for (var i = 0; i < splitIntoWords.length; i += 1) {
 	var currentWord = splitIntoWords[i]
 	var lettersOfCurrentWord = currentWord.split("")
-	var capitalizedLetter = lettersOfCurrentWord[0].toLocaleUpperCase()
-	lettersOfCurrentWord[0] = capitalizedLetter
-	var capitalizedWord = lettersOfCurrentWord.join("")
-	splitIntoWords[i] = capitalizedWord
+	lettersOfCurrentWord[0] = lettersOfCurrentWord[0].toLocaleUpperCase()
+	splitIntoWords[i] = lettersOfCurrentWord.join("")
 }
 const capitalizedName = splitIntoWords.join(" ")
 console.log(capitalizedName)
 
-// console.log(splitIntoWords)
