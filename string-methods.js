@@ -86,3 +86,12 @@ function getNumberOfVowels(someString) {
 // hello -- 2
 // goodbye -- 3
 // computerize -- 5
+
+function removeVowels(someString) {
+
+}
+// aeiou
+
+// hello -- hll
+// goodbye -- gdby
+// computerize -- cmptrz
