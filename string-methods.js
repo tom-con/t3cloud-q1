@@ -59,23 +59,30 @@
 // 1 - "1st century"
 // 100 - "2nd century"
 
-function getFromYear(year) {
-	const century = Math.ceil(year / 100)
-	var suffix = "th"
-	if (century % 100 >= 10 && century % 100 <= 20) {
-		suffix = "th"
-	} else if (century % 10 === 1) {
-		suffix = "st"
-	} else if (century % 10 === 2) {
-		suffix = "nd"
-	} else if (century % 10 === 3) {
-		suffix = "rd"
-	}
+// function getFromYear(year) {
+// 	const century = Math.ceil(year / 100)
+// 	var suffix = "th"
+// 	if (century % 100 >= 10 && century % 100 <= 20) {
+// 		suffix = "th"
+// 	} else if (century % 10 === 1) {
+// 		suffix = "st"
+// 	} else if (century % 10 === 2) {
+// 		suffix = "nd"
+// 	} else if (century % 10 === 3) {
+// 		suffix = "rd"
+// 	}
 
-	return century + suffix + " century"
+// 	return century + suffix + " century"
+// }
+
+// console.log(getFromYear(1616)) // 17th
+
+
+function getNumberOfVowels(someString) {
+
 }
+// aeiou
 
-console.log(getFromYear(1616)) // 17th
-
-
-
+// hello -- 2
+// goodbye -- 3
+// computerize -- 5
